@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+body {
+  background: #2b2c2f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-top: 80px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoForm {
+  margin-bottom: 1rem;
+}
+
+.input-field {
+  width: 220px;
+  height: 30px;
+  background: none;
+  margin-right: 15px;
+  outline: none;
+  border-radius: 30px;
+  border: none;
+  background-color: transparent;
+  box-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
+  color: #fff;
+  padding: 0 15px;
+  font-size: 18px;
+}
+
+.btn, .delete-btn {
+  border: none;
+  background: none;
+  outline: none;
+  color: #fff;
+  font-size: 14px;
+  box-shadow: 3px 3px 3px #222327, -3px -3px 3px #363636;
+  width: 80px;
+  height: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  margin-left: 1rem;
+}
+
+.btn:hover, .input-field:hover, .delete-btn:hover {
+  box-shadow: inset 3px 3px 3px #222327, inset -3px -3px 3px #363636;
+}
+
+.d-f {
+  display: flex;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px auto;;
+  font-size: 20px;
+  color: #fff;
+  flex-direction: row;
+  padding: 10px;
+  background-color: #353535;
+  border-radius: 10px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.task {
+  display: flex;
+}
+
+.d-f input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.d-f div {
+  cursor: pointer;
+}
+
+.todo-count {
+  color: #ffff;
+  margin-top: 15px;
+}
+
+.update-btn {
+  margin: 10px;
+}
+
+.all-btn {
+  width: 200px;
+  margin: 10px 0;
+}
+
+.effict-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.edit-btn, .delete-btn {
+  width: 60px;
 }
